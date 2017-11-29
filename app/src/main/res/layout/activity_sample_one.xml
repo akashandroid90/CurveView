@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+    <View
+        android:id="@+id/demo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_blue_dark" />
+
+    <developer.shivam.crescento.CrescentoContainer
+        android:id="@+id/crescentoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/demo"
+        android:background="@android:color/holo_blue_dark"
+        app:curvature="50dp"
+        app:gravity="bottom">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/wallpaper3_optimized" />
+    </developer.shivam.crescento.CrescentoContainer>
+    <!--</android.support.v7.widget.CardView>-->
+    <!--<android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="170dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/ic_add_white_24dp"
+        app:backgroundTint="#ff5722"
+        app:elevation="10dp" />-->
+
+    <TextView
+        android:id="@+id/tvStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crescentoImageView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="STORY"
+        android:textColor="#212121" />
+
+    <TextView
+        android:id="@+id/tvStoryLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvStory"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="The Rebellion makes a risky move to steal the plans to the Death Star. Setting up the epic saga to follow."
+        android:textColor="#848484"
+        android:textSize="13sp" />
+
+</RelativeLayout>
