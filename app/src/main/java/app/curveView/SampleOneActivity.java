@@ -13,7 +13,7 @@ public class SampleOneActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(developer.shivam.crescento.R.layout.activity_sample_one);
+        setContentView(R.layout.activity_sample_one);
 
         //mToolbar = (Toolbar) findViewById(R.id.toolbar);
         //mToolbar.setTitle("Rogue One: A Star Wars Story");

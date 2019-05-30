@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(developer.shivam.crescento.R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP) {
             getWindow().getDecorView()
